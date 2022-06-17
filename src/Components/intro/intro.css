@@ -1,0 +1,96 @@
+.intro {
+display: flex;
+}
+
+
+
+.left {
+    flex: 0.6;
+    overflow: hidden;
+    
+}
+.image-container {
+    background-color: red;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    float: right;
+}
+img {
+   height: 90%;
+}
+
+.right {
+flex: 0.7;
+position: relative;
+
+}
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.down-arr {
+    font-size: 40px;
+    position: absolute;
+    bottom: 20px;
+    right: 50%;
+    width: 30px;
+    animation: arrowBlink 2s infinite;
+}
+
+  @keyframes arrowBlink {
+    100% {
+      opacity: 0;
+    }
+}
+.ityped-cursor {
+    animation: blink 1s infinite;
+  }
+
+.job {
+    color: crimson;
+}
+.wrapper > h1 {
+font-size: 60px;
+margin: 10px 0;
+}
+.wrapper >h2 {
+    font-size: 30px;
+    
+}
+.wrapper >h3 {
+    font-size: 30px;
+
+}
+
+@media screen and (max-width: 768px) {
+    /* place here CSS targeted at iPhones and smaller screen sizes, not iPads */
+    .intro {
+        flex-direction: column;
+        align-items: center;
+    }
+    .image-container {
+        align-items: flex-start;
+    }
+    .image-container>img {
+        height: 50%;
+     }
+    .wrapper {
+    padding: 0;
+    align-items: center;
+    }
+    .wrapper > h1 {
+        font-size: 40px;
+    }
+    .wrapper > h3 {
+        font-size: 20px;
+    }
+}

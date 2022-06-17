@@ -1,0 +1,82 @@
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* overflow: hidden; */
+}
+.portfolio > h1 {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 50px;
+}
+.portfolio >ul {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.portfolio >ul >li {
+list-style: none;
+margin: 20px 15px;
+cursor: pointer;
+font-size: 20px;
+}
+.portfolio >ul >li.active {
+    background-color: rgb(74, 74, 173);
+    padding: 10px;
+    border-radius: 8px;
+    color: #fff;
+}
+.port-container {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.port-item {
+    width: 220px;
+    height: 150px;
+    margin: 10px 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+align-items: center;
+color: #fff;
+transition: all 0.3s ;
+}
+.port-item>img {
+    height: 100%;
+    width: 100%;
+}
+.port-item:hover img {
+    
+    opacity: 0.2;
+}
+.port-item:hover {
+    background-color: rgb(146, 146, 242);
+}
+.port-item > h3 {
+position: absolute;
+font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+   
+    .portfolio > h1 {
+        font-size: 20px;
+    }
+    .portfolio >ul {
+        /* margin: 10px 0; */
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .port-container {
+        width: 100%;
+    }
+
+    .port-item {
+        width: 130px;
+        height: 100px;
+    }
+}
